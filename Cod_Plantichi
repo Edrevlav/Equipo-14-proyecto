@@ -1,0 +1,74 @@
+#include "DHT.h"
+
+#define DHTPIN 2 
+#define DHTTYPE DHT11 
+DHT dht(DHTPIN, DHTTYPE);
+char x[8];
+char y[8];
+char dato_temperatura;
+int bomba=7;
+int sensor1=3;
+int sensor2=4;
+int sensor3=5;
+int sensor4=6;
+float humedad = 0.0;//almacena los datos enviados desde las funciones
+  float temp = 0.0;
+  char estado1='0';
+  char estado2='0';
+  char estado3='0';
+  char estado4='0';
+char dato='e';
+char datos_serial;
+
+char enviar_dato ;
+char buffer[20];
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+  pinMode(bomba,OUTPUT);
+  pinMode(sensor1,INPUT);
+  pinMode(sensor2,INPUT);
+  pinMode(sensor3,INPUT);
+  pinMode(sensor4,INPUT);
+}
+
+
+void loop()
+{
+  
+ ///este es el orden que debe ir para recibirse en la aplicacion
+  if(Serial.available()>0){
+  dato=Serial.read();
+}
+if(dato=='A'){
+digitalWrite(bomba,HIGH);
+}
+if(dato=='B'){
+
+digitalWrite(bomba,LOW);
+}
+ humedad= dht.readHumidity();
+ temp = dht.readTemperature();
+ dtostrf(temp,4,1,x);
+ dtostrf(humedad,4,1,y);
+ if(digitalRead(sensor1)==LOW)
+ estado1='1';
+ if(digitalRead(sensor1)==HIGH)
+ estado1='0';
+ if(digitalRead(sensor2)==LOW)
+ estado2='1';
+ if(digitalRead(sensor2)==HIGH)
+ estado2='0';
+ if(digitalRead(sensor3)==LOW)
+ estado3='1';
+ if(digitalRead(sensor3)==HIGH)
+ estado3='0';
+ if(digitalRead(sensor4)==LOW)
+ estado4='1';
+ if(digitalRead(sensor4)==HIGH)
+ estado4='0';
+  sprintf(buffer, "%s,%s,%c,%c,%c,%c",x,y,estado1,estado2,estado3,estado4);
+  Serial.print(buffer);
+  delay(300);
+   }

@@ -1,0 +1,44 @@
+Introducción
+
+Este proyecto está dirigido al público en general y contiene el desarrollo de una serie de actividades progresivas, realizadas con el fin de concientizar a la población, sobre la importancia de proteger y conservar el medio ambiente, inculcando el valor de la responsabilidad y el desarrollo social a los usuarios.
+Es importante precisar, que la finalidad de este proyecto es implementar  la tecnología y redes para la aplicación  en la jardinería mediante el uso de sensores que transmiten información del estado de la planta a nuestro dispositivo, dando como datos importantes la humedad, el porcentaje de luz que recibe nuestra planta, entre otros.
+
+Descripción
+
+Promover el cuidado de las plantas por medio de una aplicación amigable e intuitiva qué interactúe con el usuario como si fuera una mascota virtual.
+Pero en realidad recibirá las notificaciones de las necesidades de acuerdo a los sensores colocados en la planta real ..
+Planteamiento del problema
+Actualmente se vive una gran problemática medioambiental. El planeta ha venido experimentando cambios en la última década; uno de los más graves, el calentamiento global, debido a la forestación de sus bosques y la contaminación arrojada al medio ambiente, por lo tanto es importante inculcar a la población la importancia de conservar sus bosques y la responsabilidad que implica el cuidado de nuestro medio ambiente.
+Una de las opciones para contrarrestar el calentamiento global, es la jardinería ya que consiste en cultivar tanto en espacio abierto o cerrado, flores, hortalizas o verduras ya sea por estética, por gusto, o para la alimentación, por lo que la población aficionada al cuidado de la jardinería, debe evitar la pérdida de la misma y lograr el objetivo del cuidado de la naturaleza.
+
+Justificación
+
+Con el presente proyecto se pretende enseñar a los usuarios la importancia de las plantas y los cuidados que deben tener con ellas, inculcando los valores de responsabilidad, que deben de tener con el medio ambiente.
+Además es necesario crear conciencia al usuario que esto es posible mediante la interacción de la naturaleza y el Internet (TICS), las cuales ayudarán creativamente en el cuidado de las plantas. 
+
+Objetivo General
+Supervisar en tiempo real las necesidades que tiene tu planta por medio de alertan en un dispositivo, para obtener una certeza del cuidado de tu planta.
+
+Objetivos Particulares
+
+●	Detectar cuando necesite agua, luz, sombra…
+●	Promoción de App para apoyar el cuidado de la planta.
+●	Aprender a no descuidar tu planta.
+●	Responsabilizar a los usuarios con el cuidado de la naturaleza
+●	Generar el cuidado de espacios verdes en las comunidades
+
+Resultados esperados
+
+Fomentar el uso de la tecnología en los usuarios, para usarla como una herramienta más para el cuidado de sus plantas
+Manejo de una aplicación amigable e intuitiva qué interactúe con el usuario como si fuera una mascota virtual.
+Hacer que el usuario interactúe con la tecnología y la naturaleza, generando vínculos, que ayuden a la conservación del cuidado de la vida verde.
+
+Materiales Necesarios
+
+1 Arduino nano
+4 sensores de humedad de tierra.
+1 Sensor DHT11.
+1 Bomba de agua de 5 volts..
+1 Modulo Bluetooth.
+1 Protoboard 830 puntos
+Cables Jumper macho macho.
